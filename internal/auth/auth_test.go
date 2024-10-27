@@ -35,7 +35,7 @@ func TestGetAPIKey(t *testing.T) {
             name:        "Malformed Authorization Header - Incorrect Prefix",
             header:      http.Header{"Authorization": []string{"Bearer 12345"}},
             expectedKey: "",
-            expectedErr: ErrMalformedAuthHeader=,
+            expectedErr: ErrMalformedAuthHeader,
         },
     }
 
